@@ -20,13 +20,38 @@ and it consoles the following
 
 ```JavaScript
 
-NodeList(5) [dıv.panel.active, dıv.panel, dıv.panel, dıv.panel, dıv.panel]
-0: dıv.panel.active
-1: dıv.panel
-2: dıv.panel
-3: dıv.panel
-4: dıv.panel
+NodeList(5) [div.panel.active, div.panel, div.panel, div.panel, div.panel]
+0: div.panel.active
+1: div.panel
+2: div.panel
+3: div.panel
+4: div.panel
 length: 5
 __proto__: NodeList
 
+```
+
+### Progress Steps
+
+If you would like to use `before` pseudo class, you need to include content:
+
+```css
+.progress-container::before {
+  content: "";
+}
+```
+
+```css
+.progress {
+  transform: translateY(-50%);
+}
+```
+
+You can target disabled attribute in css and style it
+
+```css
+.btn:disabled {
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
+}
 ```
